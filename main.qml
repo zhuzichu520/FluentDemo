@@ -8,13 +8,16 @@ FluWindow {
     id:app
     width: 640
     height: 480
+    visible: true
 
-    FluAppBar{
-        id:appbar
-        width: parent.width
-        title: "Test"
+
+    FluButton{
+        text: "测试"
+        anchors.centerIn: parent
+        onClicked: {
+            showSuccess("点击了测试")
+        }
     }
-
 
 
 }
